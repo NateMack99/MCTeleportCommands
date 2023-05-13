@@ -5,6 +5,7 @@ import me.plugin.teleportcommands.commands.HomeDelete;
 import me.plugin.teleportcommands.commands.HomeSet;
 import me.plugin.teleportcommands.commands.HomeTP;
 import me.plugin.teleportcommands.listeners.OnCustomTeleport;
+import net.kyori.adventure.text.format.TextColor;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -14,6 +15,7 @@ import java.util.logging.Level;
 public final class TeleportCommands extends JavaPlugin {
 
     public static Plugin plugin;
+    public static final TextColor ERROR_COLOR = TextColor.color(255, 42, 52);
     @Override
     public void onEnable() {
         // Plugin startup logic
